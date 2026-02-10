@@ -142,6 +142,9 @@ h1, h2, h3,
   width: auto;
 }
 
+.home .row {
+  align-items: center;
+}
 
 .home h2{
   font-size: clamp(1.6rem, 4vw, 3rem);
