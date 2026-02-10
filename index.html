@@ -120,98 +120,128 @@
   </div>
 </section>
     <!-- home section ends here -->
+<!-- Include AOS CSS in <head> -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-<!-- expertise section start -->
-<section class="expertise mt-5" id="service">
-  <div class="heading text-center">
-    <h3>My Internships</h3>
-    <small>
-      Selected experiences that helped me grasp the data science landscape
-    </small>
-  </div>
-  <div class="row justify-content-evenly mt-5">
-    
-    <!-- Existing internships -->
-    <div class="col-10 col-md-4" data-aos="fade-up">
-      <div class="service-card">
-        <div class="img text-center">
-          <img src="images/Logo_Centre_national_de_la_recherche_scientifique_(2023-).svg.png" class="w-25 img-fluid img" alt="" />
-        </div>
-        <div class="content mt-3 text-center">
-          <h4>Computer Vision & ML</h4>
-          <p class="text-muted">
-            Pipeline for processing and classifying images of dried blood droplets by type of cholesterol the sample holds.
-          </p>
-          <a href="#testimonial" class="link">Tutor Recommendation</a>
-        </div>
-      </div>
+<!-- Internships Section Start -->
+<section id="internships" class="section-spacing bg-white">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center mb-16 space-y-4" data-aos="fade-up" data-aos-duration="800">
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-900">
+        My Internships
+      </h2>
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+        Selected experiences that helped me grasp the data science landscape
+      </p>
     </div>
 
-    <div class="col-md-4 col-10" data-aos="fade-up">
-      <div class="service-card">
-        <div class="img text-center">
-          <img src="images/unnamed.png" class="w-52 img-fluid img" alt="" />
+    <!-- Internship Cards Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Internship 1 -->
+      <div class="group bg-white rounded-3xl p-8 border border-gray-100 hover:border-purple-300 transition-all" data-aos="fade-up" data-aos-duration="800">
+        <div class="flex items-center justify-center h-24 mb-6">
+          <img src="images/Logo_Centre_national_de_la_recherche_scientifique_(2023-).svg.png" alt="Computer Vision & ML" class="max-h-20 w-auto object-contain">
         </div>
-        <div class="content mt-3 text-center">
-          <h4>Data Engineering applied to Airport Performance</h4>
-          <p class="text-muted">
-            Near real time flight data transfer from airport ground agents to <b>Aéroports De Paris' </b> database, 
-            aimed at showcasing the operational performance of <b>Air France Ground Handling </b>services.
-          </p>
-          <a href="#testimonial" class="link">Tutor Recommendation</a>
-        </div>
+        <h3 class="text-xl font-bold text-slate-900 group-hover:text-purple-600 transition-colors mb-4">
+          Computer Vision & ML
+        </h3>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          Pipeline for processing and classifying images of dried blood droplets by type of cholesterol the sample holds.
+        </p>
+        <a href="#recommendations" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold text-sm">
+          Tutor Recommendation
+          <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
       </div>
-    </div>
 
-    <div class="col-md-4 col-10" data-aos="fade-up">
-      <div class="service-card">
-        <div class="img">
-          <img src="images/aicha.png" class="w-25 img-fluid img" alt="" />
+      <!-- Internship 2 -->
+      <div class="group bg-white rounded-3xl p-8 border border-gray-100 hover:border-purple-300 transition-all" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        <div class="flex items-center justify-center h-24 mb-6">
+          <img src="images/unnamed.png" alt="Data Engineering applied to Airport Performance" class="max-h-20 w-auto object-contain">
         </div>
-        <div class="content mt-3">
-          <h4>Full stack Development</h4>
-          <p class="text-muted">
-            Web platform enabling communication between inventory data (prices, availability, etc.) 
-            and financial department agents.
-          </p>
-        </div>
+        <h3 class="text-xl font-bold text-slate-900 group-hover:text-purple-600 transition-colors mb-4">
+          Data Engineering applied to Airport Performance
+        </h3>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          Near real time flight data transfer from airport ground agents to <b>Aéroports De Paris'</b> database, aimed at showcasing the operational performance of <b>Air France Ground Handling</b> services.
+        </p>
+        <a href="#recommendations" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold text-sm">
+          Tutor Recommendation
+          <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
       </div>
-    </div>
 
-    <!-- New internship 1 -->
-    <div class="col-md-4 col-10 mt-4" data-aos="fade-up">
-      <div class="service-card">
-        <div class="img text-center">
-          <img src="images/kaggle.png" class="w-25 img-fluid img" alt="Kaggle Logo" />
+      <!-- Internship 3 -->
+      <div class="group bg-white rounded-3xl p-8 border border-gray-100 hover:border-purple-300 transition-all" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <div class="flex items-center justify-center h-24 mb-6">
+          <img src="images/aicha.png" alt="Full stack Development" class="max-h-20 w-auto object-contain">
         </div>
-        <div class="content mt-3 text-center">
-          <h4>Data Science Competitions</h4>
-          <p class="text-muted">
-            Participated in Kaggle competitions solving predictive modeling challenges, including feature engineering and model optimization.
-          </p>
-          <a href="#testimonial" class="link">Tutor Recommendation</a>
-        </div>
+        <h3 class="text-xl font-bold text-slate-900 group-hover:text-purple-600 transition-colors mb-4">
+          Full stack Development
+        </h3>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          Web platform enabling communication between inventory data (prices, availability, etc.) and financial department agents.
+        </p>
       </div>
-    </div>
 
-    <!-- New internship 2 -->
-    <div class="col-md-4 col-10 mt-4" data-aos="fade-up">
-      <div class="service-card">
-        <div class="img text-center">
-          <img src="images/mlh_logo.png" class="w-25 img-fluid img" alt="MLH Logo" />
+      <!-- Internship 4 -->
+      <div class="group bg-white rounded-3xl p-8 border border-gray-100 hover:border-purple-300 transition-all" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+        <div class="flex items-center justify-center h-24 mb-6">
+          <img src="images/kaggle.png" alt="Data Science Competitions" class="max-h-20 w-auto object-contain">
         </div>
-        <div class="content mt-3 text-center">
-          <h4>Machine Learning Intern</h4>
-          <p class="text-muted">
-            Developed and deployed machine learning models for real-world datasets, improving prediction accuracy for business decisions.
-          </p>
-          <a href="#testimonial" class="link">Tutor Recommendation</a>
-        </div>
+        <h3 class="text-xl font-bold text-slate-900 group-hover:text-purple-600 transition-colors mb-4">
+          Data Science Competitions
+        </h3>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          Participated in Kaggle competitions solving predictive modeling challenges, including feature engineering and model optimization.
+        </p>
+        <a href="#recommendations" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold text-sm">
+          Tutor Recommendation
+          <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
       </div>
-    </div>
 
+      <!-- Internship 5 -->
+      <div class="group bg-white rounded-3xl p-8 border border-gray-100 hover:border-purple-300 transition-all" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <div class="flex items-center justify-center h-24 mb-6">
+          <img src="images/mlh_logo.png" alt="Machine Learning Intern" class="max-h-20 w-auto object-contain">
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 group-hover:text-purple-600 transition-colors mb-4">
+          Machine Learning Intern
+        </h3>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          Developed and deployed machine learning models for real-world datasets, improving prediction accuracy for business decisions.
+        </p>
+        <a href="#recommendations" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold text-sm">
+          Tutor Recommendation
+          <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
   </div>
 </section>
+<!-- Internships Section End -->
+
+<!-- Include AOS JS before closing </body> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    offset: 100
+  });
+</script>
+
 <!-- expertise section ends here -->
 
     <!-- skill section starts 
