@@ -23,19 +23,14 @@ h1, h2, h3,
   padding: 0.4rem 1rem;
   display: flex;
   align-items: center;
-  background: linear-gradient(33deg,
-    #fff3e0 0%,
-    #f7e8ff 40%,
-    #6f34fe 100%
-  );
+  background-color: #fff;
 }
 
 /* Brand (Salma Benslimane) */
 .navbar-brand {
   font-size: 1.4rem;
-  color: #3f396d;
+  color: #6f34fe;
   line-height: 1;
-  text-decoration: none;
 }
 
 .navbar-brand:hover {
@@ -46,18 +41,23 @@ h1, h2, h3,
 /* Hamburger / menu button */
 .nav-menu {
   border: none;
-  background: transparent;
+  background: linear-gradient(33deg,
+    #fff3e0 0%,
+    #f7e8ff 40%,
+    #6f34fe 100%
+  );
   padding: 0.4rem 0.6rem;
   font-size: 1.4rem;
   font-weight: 700;
   color: #fca61f;
+  border-radius: 6px;
   display: flex;
   align-items: center;
-  cursor: pointer;
-  transition: color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .nav-menu:hover {
+  background: #6f34fe;
   color: #fff;
 }
 
@@ -66,7 +66,7 @@ h1, h2, h3,
 .navbar-nav {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1.2rem; /* modern spacing */
 }
 
 .navbar-nav a {
@@ -102,6 +102,7 @@ h1, h2, h3,
   left: 0;
 }
 
+  
 
   /* fixing horizontal flow */
   html, body { overflow-x: hidden; } /* last resort */
