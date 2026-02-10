@@ -23,6 +23,15 @@ body{
   font-family: 'Josefin Sans', sans-serif;
   text-decoration: none;   /* ensure no underline by default */
 }
+.navbar-nav a {
+  color: black;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+  font-size: 1.1rem;     /* ⬅ bigger */
+  font-weight: 700;      /* ⬅ bold */
+  letter-spacing: 0.5px; /* ⬅ subtle premium feel */
+}
 
 
 .navbar-nav a:hover{
@@ -46,7 +55,7 @@ body{
     left: 0; 
   }
 
-
+  
 
   /* fixing horizontal flow */
   html, body { overflow-x: hidden; } /* last resort */
