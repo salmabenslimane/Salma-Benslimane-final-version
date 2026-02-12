@@ -294,17 +294,22 @@
       </div>
 
 
-  <div class="container text-center mt-4">
-  <h5>Days I code</h5>
-  <img id="github-chart" src="" alt="Days I code" style="max-width:100%; height:auto;" />
-</div>
+  <section class="progress-section mt-5 pt-5" id="progress">
+    <div class="heading text-center">
+      <h3>My Progress</h3>
+      <small>Days I code</small>
+    </div>
+    <div class="container text-center mt-4">
+      <img id="github-chart" src="" alt="Days I code" style="max-width:100%; height:auto;" />
+    </div>
+  </section>
 
-<script>
-  function loadGithubChart() {
-    const img = document.getElementById('github-chart');
-    const timestamp = new Date().getTime(); // cache-buster
-    img.src = `https://ghchart.rshah.org/salmabenslimane?nocache=1&t=${timestamp}`;
-  }
+  <script>
+    function loadGithubChart() {
+      const img = document.getElementById('github-chart');
+      const timestamp = new Date().getTime(); // cache-buster
+      img.src = `https://ghchart.rshah.org/salmabenslimane?nocache=1&t=${timestamp}`;
+    }
 
   // Load on page load
   window.addEventListener('DOMContentLoaded', loadGithubChart);
